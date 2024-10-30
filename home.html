@@ -16,7 +16,7 @@
                 <!-- user balance -->
                 <div class="stats shadow">
                     <div class="stat">
-                      <div class="stat-value">9400</div>
+                      <div id="account-balance" class="stat-value">9400</div>
                       <div class="stat-desc">Available Valance</div>
                     </div>
                   </div>
@@ -35,16 +35,16 @@
                         <label class="label">
                           <span class="label-text">Amount</span>
                         </label>
-                        <input type="text" placeholder="Amount" class="input input-bordered" required />
+                        <input id="get-amount" type="text" placeholder="Amount" class="input input-bordered" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Pin Number</span>
                         </label>
-                        <input type="text" placeholder="pin" class="input input-bordered" required />
+                        <input id="get-pin" type="text" placeholder="pin" class="input input-bordered" required />
                       </div>
                       <div class="form-control mt-6">
-                        <button class="btn btn-primary">Add Money</button>
+                        <button id="add-money-btn" class="btn btn-primary">Add Money</button>
                       </div>
                     </form>
                   </div>
@@ -53,6 +53,6 @@
             </div>
           </div>
     </main>
-
+    <script src="js/home.js"></script>
 </body>
 </html>
