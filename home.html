@@ -8,12 +8,19 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+  <header>
+    <div class="flex justify-center text-4xl text-green-400">
+      <h1>Welcome to our Bank</h1>
+    </div>
+
+  </header> <br> <br>
     <main class="flex justify-center">
         <div class="mockup-phone">
-            <div class="camera"></div>
+            
             <div class="display">
-              <div class="artboard artboard-demo phone-1"> 
+              <div class="artboard artboard-demo phone-3"> 
                 <!-- user balance -->
+                 <div class="text-3xl">My Account Information</div>
                 <div class="stats shadow">
                     <div class="stat">
                       <div id="account-balance" class="stat-value">9400</div>
@@ -24,12 +31,12 @@
                  <div class="divider"></div>
                  <!-- user action button -->
                   <div>
-                    <button class="btn">Add Money</button>
-                    <button class="btn">Cash Out</button>
+                    <button id="show-add-money-btn" class="btn">Add Money</button>
+                    <button id="show-cash-out-btn" class="btn">Cash Out</button>
                   </div>
                   <div class="divider"></div>
                   <!-- add money form -->
-                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -49,10 +56,33 @@
                     </form>
                   </div>
                   <!-- add money form end -->
+                   <!-- cashout form start -->
+                   <div id="cash-out-form" class=" hidden card bg-base-200 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="get-amount-cashout" type="text" placeholder=" Cashout Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin Number</span>
+                        </label>
+                        <input id="get-pin-cashout" type="text" placeholder="pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="cash-out-btn" class="btn btn-primary bg-blue-100">CashOut</button>
+                      </div>
+                    </form>
+                  </div>
+                   <!-- cashout form end-->
               </div>
             </div>
           </div>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
 </body>
 </html>
